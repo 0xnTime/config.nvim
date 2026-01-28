@@ -5,7 +5,7 @@ local opt = vim.opt
 -- You have to turn this one on :)
 opt.inccommand = "split"
 
-vim.opt.guicursor = "n-v-i-c:block-Cursor"
+-- vim.opt.guicursor = "n-v-i-c:block-Cursor"
 
 -- Best search settings :)
 opt.smartcase = true
@@ -14,11 +14,12 @@ opt.ignorecase = true
 ----- Personal Preferences -----
 opt.number = true
 opt.relativenumber = true
-opt.cursorline = false
+opt.cursorline = true 
 
 vim.keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>")
 
 opt.clipboard = ""
+opt.mouse = "a"
 
 opt.splitbelow = true
 opt.splitright = true

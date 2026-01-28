@@ -5,7 +5,6 @@ return {
     require("mini.surround").setup()
     require("mini.cursorword").setup()
     require("mini.statusline").setup()
-    require("mini.starter").setup()
     require("mini.basics").setup()
     require("mini.move").setup()
     require("mini.pairs").setup()
