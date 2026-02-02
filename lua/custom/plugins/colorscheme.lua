@@ -1,13 +1,8 @@
 return
 {
-  "folke/tokyonight.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {},
+  'shaunsingh/nord.nvim',
   config = function()
-    require("tokyonight").setup({
-      transparent = true
-    })
-    vim.cmd.colorscheme("tokyonight-night")
-  end,
+    vim.g.nord_disable_background = true 
+    require('nord').set()
+  end
 }

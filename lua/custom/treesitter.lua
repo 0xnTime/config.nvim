@@ -11,6 +11,7 @@ M.setup = function()
       "stable",
       -- Elixir langs
       "elixir",
+      "python",
       "heex",
     },
   }

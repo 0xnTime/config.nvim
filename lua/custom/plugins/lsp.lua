@@ -81,7 +81,7 @@ return {
           rust_analyzer = true,
 
           pyright = true,
-          ruff = { manual_install = true },
+          -- ruff = { manual_install = true },
           -- mojo = { manual_install = true },
 
           -- Enabled biome formatting, turn off all the other ones generally

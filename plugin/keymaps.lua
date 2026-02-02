@@ -11,21 +11,8 @@ keymap.set("n", "<leader>Y", [["+Y]])
 keymap.set("n", "<leader><leader>x", "<cmd>source %<CR>", { desc = "Execute the current file" })
 keymap.set("n", "<leader>cc", "<cmd>ToggleTerm size=65 direction=vertical<CR>", {desc = "Enter compile mode"})
 
--- keymap.set("n", "<M-j>", function()
---   if vim.opt.diff:get() then
---     vim.cmd [[normal! ]c]]
---   else
---     vim.cmd [[m .+1<CR>==]]
---   end
--- end)
---
--- keymap.set("n", "<M-k>", function()
---   if vim.opt.diff:get() then
---     vim.cmd [[normal! [c]]
---   else
---     vim.cmd [[m .-2<CR>==]]
---   end
--- end)
+-- duplicate the line 
+keymap.set("n", "<C-,>", "_Yp")
 
 keymap.set("n", "<space>tt", function()
   vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = 0 }, { bufnr = 0 })
